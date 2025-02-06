@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     background: linear-gradient( to bottom, #144d63 0%, #144d63 50%, #144d63 100% );
-    background-image: linear-gradient( to bottom, #144d63 0%, #144d63 30%, rgba(244, 244, 244, 0.5) 100% ), url('/Images/bg.jpg');
+    background-image: linear-gradient( to bottom, #144d63 0%, #144d63 30%, rgba(244, 244, 244, 0.5) 100% ), url('Images/bg.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
