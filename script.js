@@ -1,28 +1,36 @@
 ﻿const products = [
     {
-        name: "PIN Pokestgo",
-        description: "Representa a una de las comunidades más grandes de latinoamerica y del mundo",
-        image: "Images/pinps.png",
-        price: "$5.000"
-    },
-    {
-        name: "PIN Safari City Santiago 2025",
-        description: "El recuerdo perfecto de un evento único",
-        image: "Images/pinsc.jpg",
-        price: "$8.000"
+        name: "Desafío Pasaporte",
+        description: "Completa el desafío de Pokestgo y participa por una Nintendo Switch Oled White y una Pokémon GO Plus+",
+        image: "Images/SafariCity_original.png",
+        link: "https://citysafari.pokestgo.cl/"
 
     },
     {
-        name: "PROXIMAMENTE Kit City Safari x Pokestgo",
-        description: "Más detalles dentro de poco",
-        image: "Images/soon.png",
-        price: "$20.000"
+        name: "Guía del Explorador",
+        description: "Revisa nuestra guía del explorador, preparada por el equipo de Pokestgo para los entrenadores que disfruten del City Safari de Santiago 2025",
+        image: "Images/portadaguia.png",
+        link: "https://citysafari.pokestgo.cl/guia/"
+        
     },
     {
-        name: "PROXIMAMENTE Camiseta Pokestgo",
-        description: "Más detalles dentro de poco",
-        image: "Images/soon1.png",
-        price: "$20.000"
+        name: "NIANTIC CAMPFIRE",
+        description: "Encuentra las rutas oficiales y las quedadas de la comunidad en Campfire",
+        image: "Images/cf.png",
+        link: "https://cmpf.re/pkvNCP"
+
+    },
+    {
+        name: "Únete al Grupo de Whatsapp",
+        description: "Comparte e informate de todo en nuestra comunidad",
+        image: "/Images/POKESTGO_LOGO.png",
+        link: "https://chat.whatsapp.com/G8pMjw4g8pyAPdvQiWOXtx?"
+    },
+    {
+        name: "Pasaporte Pokestgo",
+        description: "Continúa participando en otros eventos de la comunidad en nuestro pasaporte!",
+        image: "/Images/passportgo.png",
+        link: "https://pasaporte.pokestgo.cl/"
     }
 ];
 
@@ -38,9 +46,15 @@ function renderProducts() {
                     <div class="product-info">
                         <h3>${product.name}</h3>
                         <p>${product.description}</p>
-                        <div class="product-price">${product.price}</div>
                     </div>
                 `;
+
+        productCard.addEventListener('click', () => {
+            window.open(product.link, '_blank');
+        });
+
+        productCard.style.cursor = 'pointer';
+
 
         productContainer.appendChild(productCard);
     });
