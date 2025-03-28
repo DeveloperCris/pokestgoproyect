@@ -23,13 +23,13 @@
     {
         name: "Únete al Grupo de Whatsapp",
         description: "Comparte e informate de todo en nuestra comunidad",
-        image: "/Images/POKESTGO_LOGO.png",
+        image: "Images/POKESTGO_LOGO.png",
         link: "https://chat.whatsapp.com/G8pMjw4g8pyAPdvQiWOXtx?"
     },
     {
         name: "Pasaporte Pokestgo",
         description: "Continúa participando en otros eventos de la comunidad en nuestro pasaporte!",
-        image: "/Images/passportgo.png",
+        image: "Images/passportgo.png",
         link: "https://pasaporte.pokestgo.cl/"
     }
 ];
